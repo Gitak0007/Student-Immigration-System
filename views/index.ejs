@@ -51,16 +51,17 @@
     <h1><%= title %></h1>
 <div class="container-fluid" >
 	<div class="row content no-gutter">
+	<form action="/addProfile" method="POST">
 		<div class="col-xs-4 col-md-4" style=" padding: 10px;">
-				Email:<input type="email" class="form-control" name="Email"><br>
-				Password:<input type="password" class="form-control"><br>
+				<input type="email" class="form-control" name="Email" placeholder="Email"><br>
+				<input type="password" class="form-control" name="password" placeholder="Password"><br>
 				<button type="submit" class="btn btn-primary">SignIn</button><br>
 		</div>
 		
 		<div class="col-xs-4 col-md-4" style=" padding: 10px;">
-				User Name:<input type="email" class="form-control" name="reg_UserName"><br>
-				Email:<input type="email" class="form-control" name="reg_Email"><br>
-				Password:<input type="password" class="form-control" name="reg_Password"><br>
+				<input type="name" class="form-control" name="reg_UserName" placeholder="Username"><br>
+				<input type="email" class="form-control" name="reg_Email" placeholder="Email"><br>
+				<input type="password" class="form-control" name="reg_Password" placeholder="Password"><br>
 				<button type="submit" class="btn btn-primary">SignUp</button><br>
 		</div>
 	</div>

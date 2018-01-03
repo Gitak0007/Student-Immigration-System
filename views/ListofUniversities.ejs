@@ -11,6 +11,9 @@
     display: block;
     margin-top: 0em;
 }
+strong {
+    color: #0060AF;
+}
 @media (min-width: 576px)
 .col-sm-2 {
     -webkit-box-flex: 0;
@@ -38,18 +41,37 @@
     font-size: inherit;
     line-height: 1.5;
 }
-       
+    div.content ul li div h3 a {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4a4a4a;
+    text-decoration: none;
+}   
     }
   </style>
   </head>
    <body>
-	<h1><%= title %></h1>	
-		<input class="form-control" name="Gre" placeholder="GRE Score"><br>
-		<input class="form-control" name="LanguageScore" placeholder="IELTS or TOFEL"><br>
-		<input class="form-control" name="GPA" placeholder="Undergraduate CGPA"><br>
-		<input class="form-control" name="JobExperience" placeholder="Job Experience"><br>
-		<input class="form-control" name="Internship" placeholder="Internship"><br>
-		<input class="form-control" name="Publications" placeholder="Publication"><br>
-		<button type="submit" class="btn btn-primary">Evaluate</button><br>
+	<h1><%= title %></h1>
+	<div class="content">
+	<ul id="searchResults">                    
+            <li>
+            <div>
+            <h3>
+                <a href="?p=d&amp;s=sk&amp;id=1229&amp;page=1&amp;sortBy=2&amp;display=list">
+                    <i class="hidden-xs"></i>
+                    <strong>3D Printing Summer School</strong>
+                    • FH Aachen University of Applied Sciences •
+                    <span> Aachen</span>
+                </a>
+            </h3>
+            <table><tbody>
+                <tr><td>Costs</td><td>EUR 550.-</td></tr>
+                <tr><td>Course Language</td><td>English</td></tr>
+                <tr><td>Date</td><td>August 13  -  August 18, 2018</td></tr>
+            </tbody></table>
+            </div>
+            </li> 
+	</ul>
+</div>	
   </body>
 </html>
