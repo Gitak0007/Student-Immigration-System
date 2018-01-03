@@ -3,15 +3,9 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <style>
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-	.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-
 	form {
     display: block;
     margin-top: 0em;
@@ -47,23 +41,8 @@
     }
   </style>
   </head>
-  <body>
-    <h1><%= title %></h1>
-<div class="container-fluid" >
-	<div class="row content no-gutter">
-		<div class="col-xs-4 col-md-4" style=" padding: 10px;">
-				Email:<input type="email" class="form-control" name="Email"><br>
-				Password:<input type="password" class="form-control"><br>
-				<button type="submit" class="btn btn-primary">SignIn</button><br>
-		</div>
-		
-		<div class="col-xs-4 col-md-4" style=" padding: 10px;">
-				User Name:<input type="email" class="form-control" name="reg_UserName"><br>
-				Email:<input type="email" class="form-control" name="reg_Email"><br>
-				Password:<input type="password" class="form-control" name="reg_Password"><br>
-				<button type="submit" class="btn btn-primary">SignUp</button><br>
-		</div>
-	</div>
-</div>
+   <body>
+    <p>Welcome <%=data.Email %></p> 
+	<h1><%= title %></h1>	
   </body>
 </html>
