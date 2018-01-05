@@ -7,9 +7,12 @@
  <style>
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-	form {
+  form {
     display: block;
     margin-top: 0em;
+}
+strong {
+    color: #0060AF;
 }
 @media (min-width: 576px)
 .col-sm-2 {
@@ -38,13 +41,39 @@
     font-size: inherit;
     line-height: 1.5;
 }
-       
+    div.content ul li div h3 a {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4a4a4a;
+    text-decoration: none;
+}   
+a:link {
+    -webkit-tap-highlight-color: #333;
+}
+a {
+    color: #0060AF;
+    word-break: break-all;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+div.content ul li div table td {
+    padding-right: 40px;
+    padding-bottom: 4px;
+    
+}
+
+h1 {
+    font-size: 24px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
     }
   </style>
   </head>
    <body>
 	<h1>{{title}}</h1>	
-    <form >
+        <form action="/Profile" method="post" >
 		<input class="form-control" name="Gre" placeholder="GRE Score"><br>
 		<input class="form-control" name="LanguageScore" placeholder="IELTS or TOFEL"><br>
 		<input class="form-control" name="GPA" placeholder="Undergraduate CGPA"><br>

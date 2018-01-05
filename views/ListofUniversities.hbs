@@ -7,12 +7,13 @@
  <style>
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-	form {
+  form {
     display: block;
     margin-top: 0em;
 }
 strong {
     color: #0060AF;
+    font-size: 18px;
 }
 @media (min-width: 576px)
 .col-sm-2 {
@@ -47,28 +48,60 @@ strong {
     color: #4a4a4a;
     text-decoration: none;
 }   
+a:link {
+    -webkit-tap-highlight-color: #333;
+}
+a {
+    color: #0060AF;
+    word-break: break-all;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+div.content ul li div table td {
+    padding-right: 40px;
+    padding-bottom: 4px;
+    
+}
+
+h1 {
+    font-size: 24px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
+h3 {
+    font-size: 17px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
     }
   </style>
   </head>
    <body>
-	<h1><%= title %></h1>
+	<h1>{{title}}</h1>
 	<div class="content">
 	<ul id="searchResults">                    
             <li>
             <div>
+                {{#each results}}
+                
+
             <h3>
-                <a href="?p=d&amp;s=sk&amp;id=1229&amp;page=1&amp;sortBy=2&amp;display=list">
                     <i class="hidden-xs"></i>
-                    <strong>3D Printing Summer School</strong>
-                    • FH Aachen University of Applied Sciences •
-                    <span> Aachen</span>
+                    <strong>{{this.ProgramName}}</strong>
+                  
+                    <span>{{this.universityName}}</span>
                 </a>
             </h3>
             <table><tbody>
-                <tr><td>Costs</td><td>EUR 550.-</td></tr>
-                <tr><td>Course Language</td><td>English</td></tr>
-                <tr><td>Date</td><td>August 13  -  August 18, 2018</td></tr>
-            </tbody></table>
+                <tr><td>Costs</td><td>{{this.tutionFee}}</td></tr>
+                <tr><td>Course Language </td><td>{{this.courseLanguage}}</td></tr>
+                <tr><td>Date</td><td>{{this.admissionSemester}}</td></tr>
+                <tr><td>Course Website </td><td>
+                <a href={{this.courseWebsite}}>{{this.courseWebsite}}</a></td></tr>
+            </tbody></table> 
+           
+            {{/each}}
             </div>
             </li> 
 	</ul>
