@@ -6,18 +6,35 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
     "method-override": "^2.3.10",
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
+    "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "password": "^0.1.1",
     "serve-favicon": "~2.4.5"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gitak0007/Student-Immigration-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gitak0007/Student-Immigration-System/issues"
+  },
+  "homepage": "https://github.com/Gitak0007/Student-Immigration-System#readme",
+  "description": ""
 }
