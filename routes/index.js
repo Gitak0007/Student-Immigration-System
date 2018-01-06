@@ -97,7 +97,7 @@ router.post("/Profile",function(req,res,next){
 	});
 	if(profileAdd){
 		if(GPA>3){
-			var uniA=db.query("Select * from university where uniGrade='C'",function(error,results,fields){
+			var uniA=db.query("Select * from university where uniGrade='A'",function(error,results,fields){
 				if(results.length>0)
 				{
 					console.log(results);	

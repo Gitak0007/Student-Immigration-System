@@ -21,6 +21,7 @@ strong {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
 }
+
 .form-control {
     display: block;
     width: 100%;
@@ -68,19 +69,30 @@ h1 {
     color: #4A4A4A;
     font-weight: normal;
 }
+.container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     }
   </style>
   </head>
    <body>
+    <div class="container">
 	<h1>{{title}}</h1>	
+</div>
+    <div class="container">
         <form action="/Profile" method="post" >
-		<input class="form-control" name="Gre" placeholder="GRE Score"><br>
-		<input class="form-control" name="LanguageScore" placeholder="IELTS or TOFEL"><br>
-		<input class="form-control" name="GPA" placeholder="Undergraduate CGPA"><br>
-		<input class="form-control" name="JobExperience" placeholder="Job Experience"><br>
-		<input class="form-control" name="Internship" placeholder="Internship"><br>
-		<input class="form-control" name="Publications" placeholder="Publication"><br>
+		<input class="form-control" name="Gre" placeholder="GRE Score" style="width: 300px"><br>
+		<input class="form-control" name="LanguageScore" placeholder="IELTS or TOFEL" style="width: 300px"><br>
+		<input class="form-control" name="GPA" placeholder="Undergraduate CGPA" style="width: 300px"><br>
+		<input class="form-control" name="JobExperience" placeholder="Job Experience" style="width: 300px"><br>
+		<input class="form-control" name="Internship" placeholder="Internship" style="width: 300px"><br>
+		<input class="form-control" name="Publications" placeholder="Publication" style="width: 300px"><br>
 		<button type="submit" class="btn btn-primary">Evaluate</button><br>
     </form>
+</div>
   </body>
 </html>

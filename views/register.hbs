@@ -1,7 +1,7 @@
    <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <style>
@@ -68,14 +68,21 @@ h1 {
     color: #4A4A4A;
     font-weight: normal;
 }
+.container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     }
   </style>
   <body>
-<div class="container-fluid" >
+<div class="container" >
 	<div class="row content no-gutter">
 	<h1>Please Sign Up To Get Start</h1>
 <form action="/signup" method="post">
-<div class="col-xs-4 col-md-4" style=" padding: 10px;">
+<div style=" padding: 10px;">
 				<input type="name" class="form-control" name="UserName" required placeholder="Username"><br>
 				<input type="email" class="form-control" name="UserEmail" required placeholder="Email"><br>
 				<input type="password" class="form-control" name="UserPassword" required placeholder="Password"><br>
